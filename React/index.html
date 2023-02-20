@@ -10,9 +10,16 @@
     <script>
          
         const root = document.getElementById("root");
-        const span = React.createElement("h3", null, "Hello I'm a span");
-        const btn = React.createElement("button", null, "Click me Button");
-        const container = React.createElement("div", null, [span, btn]);
+
+        const h3 = React.createElement("h3", 
+        { onMouseEnter:()=> console.log("mouse enter")}, "Hello I'm a span");
+
+        const btn = React.createElement("button", 
+        { onClick: () => console.log('im clicked'), 
+          style : {backgroundColor:"tomato"}
+        }, "Click me");
+ 
+        const container = React.createElement("div", null, [h3, btn]);
         ReactDOM.render(container, root);      //root안에 container를 랜더링
 
     </script>
