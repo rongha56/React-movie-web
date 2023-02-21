@@ -19,8 +19,10 @@
           style : {backgroundColor:"tomato"}
         }, "Click me");
  
-        const container = React.createElement("div", null, [h3, btn]);
-        ReactDOM.render(container, root);      //root안에 container를 랜더링
+        // element : div, property : null, div의 content : [h3, btn]
+        const container = React.createElement("div", null, [h3, btn]); 
+        //root안에 container를 랜더링
+        ReactDOM.render(container, root);      
 
     </script>
 </html>
