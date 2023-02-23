@@ -51,12 +51,14 @@
     ReactDOM.render(container, root);
     */
 
-    const Container = (
+    // 컴포넌트를 다른 컴포넌트 안에 넣기, 내가 직접만든 요소는 모두 대문자로 시작(html 태그와는 별개임)
+    const Container = () => (
       <div>
+        <button></button>
         <Title />
         <Button />
       </div>
     );
-    ReactDOM.render(Container, root);
+    ReactDOM.render(<Container />, root);
   </script>
 </html>
