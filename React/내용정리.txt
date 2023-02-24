@@ -1,7 +1,10 @@
-[createElement 대체하는 방법]
 
-JSX 사용
+
+#2.0 JSX [createElement 대체하는 방법]
  - JavaScript를 확장한 문법
  - React요소를 만들 수 있게 해준다
  - HTML과 생긴게 비슷해서, JSX로 React 요소를 만드는것이 편리하다
  - 내가 직접 만든 요소는 모두 대문자로 시작해야한다
+
+#3.0 STATE
+ - 데이터가 저장되는곳
