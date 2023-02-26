@@ -12,25 +12,18 @@
 
   <script type="text/babel">
     const root = document.getElementById("root");
-    let counter = 0;
 
-    function countUp() {
-      counter = counter + 1;
-      render();
-    }
-    function render() {
-      ReactDOM.render(<App />, root);
-    }
-
-    /* JSX */
     function App() {
+      const [counter, modifier] = React.useState(0);
+      /*[데이터, 데이터를 바꿀 때 사용하는 함수] :  */
+      console.log(data);
       return (
         <div>
-          <h3>Total clicks: {counter}</h3>
-          <button onClick={countUp}>Click me</button>
+          <h3>Total clicks: {data[0]}</h3>
+          <button>Click me</button>
         </div>
       );
     }
-    render();
+    ReactDOM.render(<App />, root);
   </script>
 </html>
