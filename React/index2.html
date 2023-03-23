@@ -17,7 +17,8 @@
       const [counter, setCounter] = React.useState(0);
       /*React는 업데이트 사이사이마다, 정확히 어떤것이 업데이트 됐는지 파악해서 HTML에서 그 부분만 고친다*/
       const onClick = () => {
-        setCounter(counter + 1);
+        //setCounter(counter + 1);
+        setCounter((current) => current + 1);
       };
       console.log("rendered");
       console.log(counter);
